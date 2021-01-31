@@ -1,0 +1,158 @@
+/* 	RESET CSS
+	http://meyerweb.com/eric/tools/css/reset/ 
+	v2.0 | 20110126
+   	License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 Reset pour les anciens navigateurs */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+	  display: block;
+	}
+	
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 	Utilisation de la propriété "box-sizing".
+	Largeur d'un bloc = width + padding + border 
+*/
+	* {
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+/*	Modification de la couleur et couleur de fond
+	lors de la selection du contenu
+*/
+	::selection {
+		background: #ff9f39;
+		color: #fff;
+	}
+	
+	::-moz-selection {
+		background: #ff9f39;
+		color: #fff;
+	}
+
+/* 	Typographie 
+	- Déclaration des polices
+	- Taille des polices / Interlignages
+*/
+
+/* Font-Face : déclaration de la police de caractères */
+@font-face {
+    font-family: 'DroidSansRegular';
+    src: url('../font/DroidSans-webfont.eot');
+    src: url('../font/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/DroidSans-webfont.woff') format('woff'),
+         url('../font/DroidSans-webfont.ttf') format('truetype'),
+         url('../font/DroidSans-webfont.svg#DroidSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DroidSansBold';
+    src: url('../font/DroidSans-Bold-webfont.eot');
+    src: url('../font/DroidSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/DroidSans-Bold-webfont.woff') format('woff'),
+         url('../font/DroidSans-Bold-webfont.ttf') format('truetype'),
+         url('../font/DroidSans-Bold-webfont.svg#DroidSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	/* Check vertical-rythm 
+	background-image: -webkit-linear-gradient(top, #ffffff, #ffffff 96%, #000000 100%); 	
+	background-size:21px 21px;
+	background-position: 0 -2px; */
+	background: #f5f5f5;
+	color:#333;
+	font-family: 'DroidSansRegular', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+p, ul, h1, h2, h3, h4 {
+	margin: 21px 0;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 21px;
+}
+
+h4 {
+	font-size: 18px;
+	line-height:21px;
+}
+
+b,strong {
+	font-weight: bold;
+}
+
+em, i {
+	font-style: italic;
+}
+
+/* Liens */
+	a {
+		color: #33a4c9;
+		cursor: pointer;
+		text-decoration: none;
+	}
+
+	a:hover, a:focus {
+		color: #2c8eae;
+		text-decoration: underline;
+		-webkit-transition: all 1s;
+	}
+
+

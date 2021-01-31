@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+<meta name="author" content="Giacomo Saccaggi" />
+<link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/413/413772.png" />
+<title>GET MAILS</title>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147261423-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-147261423-1');
+</script>
+	
+<link rel="stylesheet" media="screen and (min-width:481px)" href="cv.css">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+</style>
+
+
+
+<style>
+
+blockquote { padding: 30px 40px; font-family: 'Bitter',serif; font-size: 18px; border-left: 5px solid #d0d0d0; margin: 20px 40px; color: #a9a9a9; }
+
+</style>
+
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="https://giacomosaccaggi.github.io">Home</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  
+                    <li>
+                        <a href="https://giacomosaccaggi.github.io/all.html">All projects</a>
+                    </li>
+                    <li>
+                        <a href="https://giacomosaccaggi.github.io/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('sfondo.png')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h2>WEB SCRAPING</h2>
+                        <hr class="small">
+                        <h5>PRENDERE EMAIL DALLE PAGINE GIALLE</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+            
+        <br>
+        <h1>Premessa:</h1>
+        <p>Succede abbastanza spesso che in un azienda sarebbe utile poter avere le mail relative a tutti i possibili clienti per poter inviare pubblicità o promozione. Avere questo tipo di informazioni risulta molto spesso piuttosto complicato, per questo ho deciso di spiegare in questo articolo come fare ad avere questo genere di informazioni. <br> In questo articolo ci concentreremo a vedere la procedure con due linguaggi di programmazione (R e Python) molto comodi per le procedure di Web Scraping soprattutto per la loro facilità di strutturare procedure di text mining.</p>
+        <h1>Cos'è il Web Scraping?</h1>
+        <p>Prima di andare ad analizzare il codice descrivendolo occorre capire cosa sia il web scraping. Il Web scraping (chiamato anche web harvesting, o web data extraction) è un insieme di tecniche utilizzate per l'estrazione di dati dai siti Web. È una forma di copia, in cui i dati specifici vengono raccolti e copiati accedendo al World Wide Web direttamente utilizzando il protocollo Hypertext Transfer Protocol o tramite un browser Web. In genere il termine si riferisce a processi automatizzati implementati utilizzando un web crawler, un bot o un server per il successivo recupero o analisi in un database locale centrale o foglio di calcolo.
+        <br>
+        Tra le tante possibili soluzioni si è deciso di utilizzare la tecnica di Web Scraping chiamata HTML Parsing ossia una deserializzazione delle pagine HTML. Questo processo riceve il codice HTML non elaborato, lo interpreta e genera dal codice una struttura ad albero DOM (Document Object Model).
+        <br>
+        Questa tecnica è molto versatile in quanto gran parte dei siti Web hanno grandi raccolte di pagine generate dinamicamente da un'origine strutturata sottostante come un database. I dati della stessa categoria sono in genere codificati in pagine simili da uno script o un modello comune. Nel data mining, un programma che rileva tali modelli in una particolare fonte di informazioni, ne estrae il contenuto e lo traduce in un modulo relazionale, viene chiamato wrapper. Gli algoritmi di generazione dei wrapper presuppongono che le pagine di input di un sistema di induzione di wrapper siano conformi a un modello comune e che possano essere facilmente identificate in termini di schema comune URL.
+        </p>
+        <blockquote>Che paroloni, cos'è e in cosa consiste in definitiva il web scraping? <br> Il web scraping è una tecnica con cui si prendono le informazioni da internet. In particolare la tecnica chiamata HTML Parsing consiste nel capire la struttura del sito e della pagina web e trovare il modo di prendere le informazioni in modo automatico da tutte le pagine. </blockquote> 
+        <h1>Obbiettivo del progetto:</h1>
+        <p>L'obbiettivo di questo progetto consiste nel cercare di prendere le mail dalle pagine gialle che sono la fonte italiana dove le aziende solitamente si iscrivono per farsi trovare dai clienti.</p>
+        <h3>Ma sulle Pagine Gialle non ci sono le mail...</h3>
+        <p>In effetti è vero, sulle pagine gialle non ci sono le mail, infatti il nostro obbiettivo iniziale deve essere quello di prendere, per le aziende che hanno messo il sito web sulle pagine gialle, l'indirizzo web; per poi andare a cercare all'interno del loro sito la mail della società.
+        </p><br>
+        <h1>Andiamo a vedere in pratica come fare (back end):</h1>
+        <center>
+        <hr>
+        <h3><a href="codice_in_R.html">Spiegazione e codice in R</a><h3>
+        <h6><a href="codice_in_R.R">Codice in R</a><h6>
+        <hr>
+        <h3><a href="codice_in_Python.html">Spiegazione e codice in Python</a><h3>
+        <h6><a href="codice_in_Python.py">Codice in Python</a><h6>
+        <hr>
+
+        </center>
+        <br><br>
+        <h1>Come si può abbellire il tutto? (front end)</h1>
+        Non vuoi che il tuo script risulti un freddo codice da far partire dal terminale e vuoi che sia un po' più bello? Premetto che non sono molto bravo nella parte front end, soprattutto per il mio pessimo gusto estetico ma anche per la mia poca esperienza in questo ambito.
+        Comunque quando bisogna pensare a strutturare la parte front end di script in R o Python sono solito strutturare un parte front end che, semplicemente, aiuta, tramite una form grafica, ad eseguire il codice sul terminale.<br>
+        In questo caso ho deciso utilizzare VB.NET in quanto lo conosco abbastanza bene perchè è uno dei primi linguaggi che ho imparato ed ero più comodo nell'utilizzarlo (detto questo persone più competenti di me avrebbero magari scelto un altro linguaggio o lo stesso ma lo avrebbero fatto meglio).
+
+        <center>
+        <hr>
+        <h3>Programma si apre con una form costruita come segue:</h3><br>
+        <img src="userform_1.png" width="100%" height="auto">
+        <hr><h3>Ci sono due opzioni: cercare in una regione o citta specifica</h3><br>
+        <img src="userform_2a.png" width="100%" height="auto">
+        <hr><h3>... oppure cercare in tutta italia</h3><br>
+        <img src="userform_2b.png" width="100%" height="auto">
+        <hr><h3>Ed infine una volta scaricati tutti i dati esce fuori il comando per scaricare il csv:</h3><br>
+        <img src="userform_3.png" width="100%" height="auto">
+        <hr>
+        </center>
+            
+        <br><br>
+        
+        </div>
+
+
+   <!-- Footer -->
+    <footer>
+       <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="https://twitter.com/SaccaggiGiacomo">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/giacomo-saccaggi-782439163/">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/GiacomoSaccaggi/">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; GiacomoSaccaggi</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </body>
+
+</html>

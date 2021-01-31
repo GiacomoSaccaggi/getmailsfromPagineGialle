@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta name="author" content="Giacomo Saccaggi" />
+<link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/413/413772.png" />
+<style type="text/css">
+.inline {
+  background-color: #f7f7f7;
+  border:solid 1px #B0B0B0;
+}
+.error {
+	font-weight: bold;
+	color: #FF0000;
+}
+.warning {
+	font-weight: bold;
+}
+.message {
+	font-style: italic;
+}
+.source, .output, .warning, .error, .message {
+	padding: 0 1em;
+  border:solid 1px #F7F7F7;
+}
+.source {
+  background-color: #f5f5f5;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.center {
+  text-align: center;
+}
+.hl.num {
+  color: #AF0F91;
+}
+.hl.str {
+  color: #317ECC;
+}
+.hl.com {
+  color: #AD95AF;
+  font-style: italic;
+}
+.hl.opt {
+  color: #000000;
+}
+.hl.std {
+  color: #585858;
+}
+.hl.kwa {
+  color: #295F94;
+  font-weight: bold;
+}
+.hl.kwb {
+  color: #B05A65;
+}
+.hl.kwc {
+  color: #55aa55;
+}
+.hl.kwd {
+  color: #BC5A65;
+  font-weight: bold;
+}
+</style>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+<title>CODE</title>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147261423-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-147261423-1');
+</script>
+	
+<link rel="stylesheet" media="screen and (min-width:481px)" href="cv.css">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+</style>
+
+
+
+<style>
+
+blockquote { padding: 30px 40px; font-family: 'Bitter',serif; font-size: 18px; border-left: 5px solid #d0d0d0; margin: 20px 40px; color: #a9a9a9; }
+
+</style>
+
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="https://giacomosaccaggi.github.io">Home</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  
+                    <li>
+                        <a href="https://giacomosaccaggi.github.io/all.html">All projects</a>
+                    </li>
+                    <li>
+                        <a href="https://giacomosaccaggi.github.io/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('sfondo.png')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h2>Spiegazione codice in R</h2>
+                        <hr class="small">
+                        <h5>PRENDERE EMAIL DALLE PAGINE GIALLE</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+            
+<p>Per prima cosa bisogna importare le librerie che ci serviranno durante il progetto, nel caso queste non siano già state installate occorre scaricarle con il comando <code>install.packages("library_name")</code></p>
+
+<div class="chunk" id="unnamed-chunk-1"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl kwd">library</span><span class="hl std">(xml2)</span>
+<span class="hl kwd">library</span><span class="hl std">(XML)</span>
+<span class="hl kwd">library</span><span class="hl std">(rvest)</span>
+<span class="hl kwd">library</span><span class="hl std">(gmailr)</span>
+<span class="hl kwd">library</span><span class="hl std">(RCurl)</span>
+<span class="hl kwd">library</span><span class="hl std">(plotrix)</span>
+<span class="hl kwd">library</span><span class="hl std">(fmsb)</span>
+<span class="hl kwd">library</span><span class="hl std">(RColorBrewer)</span>
+<span class="hl kwd">library</span><span class="hl std">(readr)</span>
+<span class="hl kwd">library</span><span class="hl std">(xml2)</span>
+<span class="hl kwd">library</span><span class="hl std">(XML)</span>
+<span class="hl kwd">library</span><span class="hl std">(rvest)</span>
+<span class="hl kwd">library</span><span class="hl std">(stringr,</span> <span class="hl kwc">warn.conflicts</span> <span class="hl std">= F)</span>
+<span class="hl kwd">library</span><span class="hl std">(readxl)</span>
+</pre></div>
+</div></div>
+
+<p>Per avere informazioni relative alla geolocalizzazione creiamo due vettori uno con le province ed uno con le regioni relative alle province.</p>
+
+<div class="chunk" id="unnamed-chunk-2"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">Provincia</span><span class="hl kwb">&lt;-</span><span class="hl kwd">c</span><span class="hl std">(</span><span class="hl str">'Agrigento'</span><span class="hl std">,</span><span class="hl str">'Alessandria'</span><span class="hl std">,</span><span class="hl str">'Ancona'</span><span class="hl std">,</span><span class="hl str">'Aosta'</span><span class="hl std">,</span><span class="hl str">'Arezzo'</span><span class="hl std">,</span><span class="hl str">'Ascoli Piceno'</span><span class="hl std">,</span><span class="hl str">'Asti'</span><span class="hl std">,</span><span class="hl str">'Avellino'</span><span class="hl std">,</span><span class="hl str">'Bari'</span><span class="hl std">,</span><span class="hl str">'Barletta-Andria-Trani'</span><span class="hl std">,</span><span class="hl str">'Belluno'</span><span class="hl std">,</span><span class="hl str">'Benevento'</span><span class="hl std">,</span><span class="hl str">'Bergamo'</span><span class="hl std">,</span><span class="hl str">'Biella'</span><span class="hl std">,</span><span class="hl str">'Bologna'</span><span class="hl std">,</span><span class="hl str">'Bolzano'</span><span class="hl std">,</span><span class="hl str">'Brescia'</span><span class="hl std">,</span><span class="hl str">'Brindisi'</span><span class="hl std">,</span><span class="hl str">'Cagliari'</span><span class="hl std">,</span><span class="hl str">'Caltanissetta'</span><span class="hl std">,</span><span class="hl str">'Campobasso'</span><span class="hl std">,</span><span class="hl str">'Caserta'</span><span class="hl std">,</span><span class="hl str">'Catania'</span><span class="hl std">,</span><span class="hl str">'Catanzaro'</span><span class="hl std">,</span><span class="hl str">'Chieti'</span><span class="hl std">,</span><span class="hl str">'Como'</span><span class="hl std">,</span><span class="hl str">'Cosenza'</span><span class="hl std">,</span><span class="hl str">'Cremona'</span><span class="hl std">,</span><span class="hl str">'Crotone'</span><span class="hl std">,</span><span class="hl str">'Cuneo'</span><span class="hl std">,</span><span class="hl str">'Enna'</span><span class="hl std">,</span><span class="hl str">'Fermo'</span><span class="hl std">,</span><span class="hl str">'Ferrara'</span><span class="hl std">,</span><span class="hl str">'Firenze'</span><span class="hl std">,</span><span class="hl str">'Foggia'</span><span class="hl std">,</span><span class="hl str">'Forl&lt;ec&gt;-Cesena'</span><span class="hl std">,</span><span class="hl str">'Frosinone'</span><span class="hl std">,</span><span class="hl str">'Genova'</span><span class="hl std">,</span><span class="hl str">'Gorizia'</span><span class="hl std">,</span><span class="hl str">'Grosseto'</span><span class="hl std">,</span><span class="hl str">'Imperia'</span><span class="hl std">,</span><span class="hl str">'Isernia'</span><span class="hl std">,</span><span class="hl str">&quot;L'Aquila&quot;</span><span class="hl std">,</span><span class="hl str">'La Spezia'</span><span class="hl std">,</span><span class="hl str">'Latina'</span><span class="hl std">,</span><span class="hl str">'Lecce'</span><span class="hl std">,</span><span class="hl str">'Lecco'</span><span class="hl std">,</span><span class="hl str">'Livorno'</span><span class="hl std">,</span><span class="hl str">'Lodi'</span><span class="hl std">,</span><span class="hl str">'Lucca'</span><span class="hl std">,</span><span class="hl str">'Macerata'</span><span class="hl std">,</span><span class="hl str">'Mantova'</span><span class="hl std">,</span><span class="hl str">'Massa-Carrara'</span><span class="hl std">,</span><span class="hl str">'Matera'</span><span class="hl std">,</span><span class="hl str">'Messina'</span><span class="hl std">,</span><span class="hl str">'Milano'</span><span class="hl std">,</span><span class="hl str">'Modena'</span><span class="hl std">,</span><span class="hl str">'Monza e Brianza'</span><span class="hl std">,</span><span class="hl str">'Napoli'</span><span class="hl std">,</span><span class="hl str">'Novara'</span><span class="hl std">,</span><span class="hl str">'Nuoro'</span><span class="hl std">,</span><span class="hl str">'Oristano'</span><span class="hl std">,</span><span class="hl str">'Palermo'</span><span class="hl std">,</span><span class="hl str">'Padova'</span><span class="hl std">,</span><span class="hl str">'Parma'</span><span class="hl std">,</span><span class="hl str">'Pavia'</span><span class="hl std">,</span><span class="hl str">'Perugia'</span><span class="hl std">,</span><span class="hl str">'Pesaro e Urbino'</span><span class="hl std">,</span><span class="hl str">'Pescara'</span><span class="hl std">,</span><span class="hl str">'Piacenza'</span><span class="hl std">,</span><span class="hl str">'Pisa'</span><span class="hl std">,</span><span class="hl str">'Pistoia'</span><span class="hl std">,</span><span class="hl str">'Pordenone'</span><span class="hl std">,</span><span class="hl str">'Potenza'</span><span class="hl std">,</span><span class="hl str">'Prato'</span><span class="hl std">,</span><span class="hl str">'Reggio Calabria'</span><span class="hl std">,</span><span class="hl str">'Ragusa'</span><span class="hl std">,</span><span class="hl str">'Ravenna'</span><span class="hl std">,</span><span class="hl str">'Reggio Emilia'</span><span class="hl std">,</span><span class="hl str">'Rieti'</span><span class="hl std">,</span><span class="hl str">'Rimini'</span><span class="hl std">,</span><span class="hl str">'Roma'</span><span class="hl std">,</span><span class="hl str">'Rovigo'</span><span class="hl std">,</span><span class="hl str">'Salerno'</span><span class="hl std">,</span><span class="hl str">'Sassari'</span><span class="hl std">,</span><span class="hl str">'Savona'</span><span class="hl std">,</span><span class="hl str">'Siena'</span><span class="hl std">,</span><span class="hl str">'Siracusa'</span><span class="hl std">,</span><span class="hl str">'Sondrio'</span><span class="hl std">,</span><span class="hl str">'Sud Sardegna'</span><span class="hl std">,</span><span class="hl str">'Taranto'</span><span class="hl std">,</span><span class="hl str">'Teramo'</span><span class="hl std">,</span><span class="hl str">'Terni'</span><span class="hl std">,</span><span class="hl str">'Torino'</span><span class="hl std">,</span><span class="hl str">'Trapani'</span><span class="hl std">,</span><span class="hl str">'Trento'</span><span class="hl std">,</span><span class="hl str">'Treviso'</span><span class="hl std">,</span><span class="hl str">'Trieste'</span><span class="hl std">,</span><span class="hl str">'Udine'</span><span class="hl std">,</span><span class="hl str">'Varese'</span><span class="hl std">,</span><span class="hl str">'Venezia'</span><span class="hl std">,</span><span class="hl str">'Verbano-Cusio-Ossola'</span><span class="hl std">,</span><span class="hl str">'Vercelli'</span><span class="hl std">,</span><span class="hl str">'Verona'</span><span class="hl std">,</span><span class="hl str">'Vibo Valentia'</span><span class="hl std">,</span><span class="hl str">'Vicenza'</span><span class="hl std">,</span><span class="hl str">'Viterbo'</span><span class="hl std">)</span>
+<span class="hl std">Regione</span><span class="hl kwb">&lt;-</span><span class="hl kwd">c</span><span class="hl std">(</span><span class="hl str">'Sicilia'</span><span class="hl std">,</span><span class="hl str">'Piemonte'</span><span class="hl std">,</span><span class="hl str">'Marche'</span><span class="hl std">,</span><span class="hl str">&quot;Valle d'Aosta&quot;</span><span class="hl std">,</span><span class="hl str">'Toscana'</span><span class="hl std">,</span><span class="hl str">'Marche'</span><span class="hl std">,</span><span class="hl str">'Piemonte'</span><span class="hl std">,</span><span class="hl str">'Campania'</span><span class="hl std">,</span><span class="hl str">'Puglia'</span><span class="hl std">,</span><span class="hl str">'Puglia'</span><span class="hl std">,</span><span class="hl str">'Veneto'</span><span class="hl std">,</span><span class="hl str">'Campania'</span><span class="hl std">,</span><span class="hl str">'Lombardia'</span><span class="hl std">,</span><span class="hl str">'Piemonte'</span><span class="hl std">,</span><span class="hl str">'Emilia-Romagna'</span><span class="hl std">,</span><span class="hl str">'Trentino-Alto Adige'</span><span class="hl std">,</span><span class="hl str">'Lombardia'</span><span class="hl std">,</span><span class="hl str">'Puglia'</span><span class="hl std">,</span><span class="hl str">'Sardegna'</span><span class="hl std">,</span><span class="hl str">'Sicilia'</span><span class="hl std">,</span><span class="hl str">'Molise'</span><span class="hl std">,</span><span class="hl str">'Campania'</span><span class="hl std">,</span><span class="hl str">'Sicilia'</span><span class="hl std">,</span><span class="hl str">'Calabria'</span><span class="hl std">,</span><span class="hl str">'Abruzzo'</span><span class="hl std">,</span><span class="hl str">'Lombardia'</span><span class="hl std">,</span><span class="hl str">'Calabria'</span><span class="hl std">,</span><span class="hl str">'Lombardia'</span><span class="hl std">,</span><span class="hl str">'Calabria'</span><span class="hl std">,</span><span class="hl str">'Piemonte'</span><span class="hl std">,</span><span class="hl str">'Sicilia'</span><span class="hl std">,</span><span class="hl str">'Marche'</span><span class="hl std">,</span><span class="hl str">'Emilia-Romagna'</span><span class="hl std">,</span><span class="hl str">'Toscana'</span><span class="hl std">,</span><span class="hl str">'Puglia'</span><span class="hl std">,</span><span class="hl str">'Emilia-Romagna'</span><span class="hl std">,</span><span class="hl str">'Lazio'</span><span class="hl std">,</span><span class="hl str">'Liguria'</span><span class="hl std">,</span><span class="hl str">'Friuli-Venezia Giulia'</span><span class="hl std">,</span><span class="hl str">'Toscana'</span><span class="hl std">,</span><span class="hl str">'Liguria'</span><span class="hl std">,</span><span class="hl str">'Molise'</span><span class="hl std">,</span><span class="hl str">'Abruzzo'</span><span class="hl std">,</span><span class="hl str">'Liguria'</span><span class="hl std">,</span><span class="hl str">'Lazio'</span><span class="hl std">,</span><span class="hl str">'Puglia'</span><span class="hl std">,</span><span class="hl str">'Lombardia'</span><span class="hl std">,</span><span class="hl str">'Toscana'</span><span class="hl std">,</span><span class="hl str">'Lombardia'</span><span class="hl std">,</span><span class="hl str">'Toscana'</span><span class="hl std">,</span><span class="hl str">'Marche'</span><span class="hl std">,</span><span class="hl str">'Lombardia'</span><span class="hl std">,</span><span class="hl str">'Toscana'</span><span class="hl std">,</span><span class="hl str">'Basilicata'</span><span class="hl std">,</span><span class="hl str">'Sicilia'</span><span class="hl std">,</span><span class="hl str">'Lombardia'</span><span class="hl std">,</span><span class="hl str">'Emilia-Romagna'</span><span class="hl std">,</span><span class="hl str">'Lombardia'</span><span class="hl std">,</span><span class="hl str">'Campania'</span><span class="hl std">,</span><span class="hl str">'Piemonte'</span><span class="hl std">,</span><span class="hl str">'Sardegna'</span><span class="hl std">,</span><span class="hl str">'Sardegna'</span><span class="hl std">,</span><span class="hl str">'Sicilia'</span><span class="hl std">,</span><span class="hl str">'Veneto'</span><span class="hl std">,</span><span class="hl str">'Emilia-Romagna'</span><span class="hl std">,</span><span class="hl str">'Lombardia'</span><span class="hl std">,</span><span class="hl str">'Umbria'</span><span class="hl std">,</span><span class="hl str">'Marche'</span><span class="hl std">,</span><span class="hl str">'Abruzzo'</span><span class="hl std">,</span><span class="hl str">'Emilia-Romagna'</span><span class="hl std">,</span><span class="hl str">'Toscana'</span><span class="hl std">,</span><span class="hl str">'Toscana'</span><span class="hl std">,</span><span class="hl str">'Friuli-Venezia Giulia'</span><span class="hl std">,</span><span class="hl str">'Basilicata'</span><span class="hl std">,</span><span class="hl str">'Toscana'</span><span class="hl std">,</span><span class="hl str">'Calabria'</span><span class="hl std">,</span><span class="hl str">'Sicilia'</span><span class="hl std">,</span><span class="hl str">'Emilia-Romagna'</span><span class="hl std">,</span><span class="hl str">'Emilia-Romagna'</span><span class="hl std">,</span><span class="hl str">'Lazio'</span><span class="hl std">,</span><span class="hl str">'Emilia-Romagna'</span><span class="hl std">,</span><span class="hl str">'Lazio'</span><span class="hl std">,</span><span class="hl str">'Veneto'</span><span class="hl std">,</span><span class="hl str">'Campania'</span><span class="hl std">,</span><span class="hl str">'Sardegna'</span><span class="hl std">,</span><span class="hl str">'Liguria'</span><span class="hl std">,</span><span class="hl str">'Toscana'</span><span class="hl std">,</span><span class="hl str">'Sicilia'</span><span class="hl std">,</span><span class="hl str">'Lombardia'</span><span class="hl std">,</span><span class="hl str">'Sardegna'</span><span class="hl std">,</span><span class="hl str">'Puglia'</span><span class="hl std">,</span><span class="hl str">'Abruzzo'</span><span class="hl std">,</span><span class="hl str">'Umbria'</span><span class="hl std">,</span><span class="hl str">'Piemonte'</span><span class="hl std">,</span><span class="hl str">'Sicilia'</span><span class="hl std">,</span><span class="hl str">'Trentino-Alto Adige'</span><span class="hl std">,</span><span class="hl str">'Veneto'</span><span class="hl std">,</span><span class="hl str">'Friuli-Venezia Giulia'</span><span class="hl std">,</span><span class="hl str">'Friuli-Venezia Giulia'</span><span class="hl std">,</span><span class="hl str">'Lombardia'</span><span class="hl std">,</span><span class="hl str">'Veneto'</span><span class="hl std">,</span><span class="hl str">'Piemonte'</span><span class="hl std">,</span><span class="hl str">'Piemonte'</span><span class="hl std">,</span><span class="hl str">'Veneto'</span><span class="hl std">,</span><span class="hl str">'Calabria'</span><span class="hl std">,</span><span class="hl str">'Veneto'</span><span class="hl std">,</span><span class="hl str">'Lazio'</span><span class="hl std">)</span>
+</pre></div>
+</div></div>
+
+
+
+<p>Per seconda cosa chiamiamo <code>lavori</code> il nome della mansione che dobbiamo cercare, inoltre creiamo una matrice che chiamiamo <code>database_scar</code> per poi inserire all'interno le mail della società e le informazioni.</p>
+
+<div class="chunk" id="unnamed-chunk-3"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">lavori</span><span class="hl kwb">=</span> <span class="hl str">&quot;mansione da cercare&quot;</span>
+<span class="hl std">database_scar</span><span class="hl kwb">&lt;-</span><span class="hl kwd">matrix</span><span class="hl std">(</span><span class="hl kwc">ncol</span> <span class="hl std">=</span> <span class="hl num">5</span><span class="hl std">)</span>
+<span class="hl kwd">colnames</span><span class="hl std">(database_scar)</span><span class="hl kwb">&lt;-</span><span class="hl kwd">c</span><span class="hl std">(</span><span class="hl str">&quot;Sito-web&quot;</span><span class="hl std">,</span><span class="hl str">&quot;Email&quot;</span><span class="hl std">,</span><span class="hl str">&quot;Tipo di struttura&quot;</span><span class="hl std">,</span><span class="hl str">&quot;Provincia&quot;</span><span class="hl std">,</span><span class="hl str">&quot;Regione&quot;</span><span class="hl std">)</span>
+</pre></div>
+</div></div>
+
+
+<p>Infine facciamo la parte di ricerca delle mail che consiste nel ricercare per ogni procincia tramite un ciclo for tutti coloro i quali si sono registrati inserendo il sito web per poi andare ad ricercare all'interno del sito web la mail ricercando all'interno dei link inseriti all'interno del sito il <code>mailto</code>. <br>In tutto questo utilizziamo molte volte il <code>try</code> per evitare gli errori 404 e anche eventuali errori di blocco da parte del sito per i troppi accessi.</p>
+
+
+<div class="chunk" id="unnamed-chunk-4"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">posizione</span><span class="hl kwb">&lt;-</span><span class="hl num">0</span>
+<span class="hl kwa">for</span><span class="hl std">(zone</span> <span class="hl kwa">in</span> <span class="hl std">Provincia){</span>
+  <span class="hl std">posizione</span><span class="hl kwb">&lt;-</span><span class="hl std">posizione</span><span class="hl opt">+</span><span class="hl num">1</span>
+  <span class="hl std">regione</span><span class="hl kwb">&lt;-</span><span class="hl std">Regione[posizione]</span>
+  <span class="hl std">errore</span><span class="hl kwb">=</span><span class="hl num">0</span>
+  <span class="hl kwa">for</span> <span class="hl std">(i</span> <span class="hl kwa">in</span> <span class="hl num">1</span><span class="hl opt">:</span><span class="hl num">2000</span><span class="hl std">) {</span>
+    <span class="hl kwd">print</span><span class="hl std">(</span><span class="hl kwd">paste</span><span class="hl std">(lavori,zone,i))</span>
+    <span class="hl kwd">try</span><span class="hl std">({</span>
+    <span class="hl std">mail</span><span class="hl kwb">&lt;-</span><span class="hl str">&quot;le mail&quot;</span>
+    <span class="hl std">page</span><span class="hl kwb">&lt;-</span><span class="hl str">&quot;ciao&quot;</span>
+    <span class="hl kwd">try</span><span class="hl std">(page</span><span class="hl kwb">&lt;-</span><span class="hl kwd">read_html</span><span class="hl std">(</span><span class="hl kwd">paste0</span><span class="hl std">(</span><span class="hl str">&quot;https://www.paginegialle.it/ricerca/&quot;</span><span class="hl std">,</span><span class="hl kwd">gsub</span><span class="hl std">(</span><span class="hl str">&quot; &quot;</span><span class="hl std">,</span><span class="hl str">&quot;%20&quot;</span><span class="hl std">,lavori),</span><span class="hl str">&quot;/&quot;</span><span class="hl std">,</span><span class="hl kwd">gsub</span><span class="hl std">(</span><span class="hl str">&quot; &quot;</span><span class="hl std">,</span><span class="hl str">&quot;%20&quot;</span><span class="hl std">,zone),</span><span class="hl str">&quot;/p-&quot;</span><span class="hl std">,i)))</span>
+    <span class="hl kwa">if</span><span class="hl std">(</span><span class="hl kwd">length</span><span class="hl std">(page)</span><span class="hl opt">==</span><span class="hl num">1</span><span class="hl std">){</span>
+      <span class="hl kwd">try</span><span class="hl std">(page</span><span class="hl kwb">&lt;-</span><span class="hl kwd">read_html</span><span class="hl std">(</span><span class="hl kwd">paste0</span><span class="hl std">(</span><span class="hl str">&quot;https://www.paginegialle.it/ricerca/&quot;</span><span class="hl std">,</span><span class="hl kwd">gsub</span><span class="hl std">(</span><span class="hl str">&quot; &quot;</span><span class="hl std">,</span><span class="hl str">&quot;%20&quot;</span><span class="hl std">,lavori),</span><span class="hl str">&quot;/&quot;</span><span class="hl std">,</span><span class="hl kwd">gsub</span><span class="hl std">(</span><span class="hl str">&quot; &quot;</span><span class="hl std">,</span><span class="hl str">&quot;%20&quot;</span><span class="hl std">,zone),</span><span class="hl str">&quot;/p-&quot;</span><span class="hl std">,i)))</span>
+
+      <span class="hl kwa">if</span><span class="hl std">(</span><span class="hl kwd">length</span><span class="hl std">(page)</span><span class="hl opt">==</span><span class="hl num">1</span><span class="hl std">){</span>
+        <span class="hl kwd">try</span><span class="hl std">(page</span><span class="hl kwb">&lt;-</span><span class="hl kwd">read_html</span><span class="hl std">(</span><span class="hl kwd">paste0</span><span class="hl std">(</span><span class="hl str">&quot;https://www.paginegialle.it/ricerca/&quot;</span><span class="hl std">,</span><span class="hl kwd">gsub</span><span class="hl std">(</span><span class="hl str">&quot; &quot;</span><span class="hl std">,</span><span class="hl str">&quot;%20&quot;</span><span class="hl std">,lavori),</span><span class="hl str">&quot;/&quot;</span><span class="hl std">,</span><span class="hl kwd">gsub</span><span class="hl std">(</span><span class="hl str">&quot; &quot;</span><span class="hl std">,</span><span class="hl str">&quot;%20&quot;</span><span class="hl std">,zone),</span><span class="hl str">&quot;/p-&quot;</span><span class="hl std">,i)))</span>
+
+      <span class="hl kwa">if</span><span class="hl std">(</span><span class="hl kwd">length</span><span class="hl std">(page)</span><span class="hl opt">==</span><span class="hl num">1</span><span class="hl std">){</span>
+        <span class="hl kwd">try</span><span class="hl std">(page</span><span class="hl kwb">&lt;-</span><span class="hl kwd">read_html</span><span class="hl std">(</span><span class="hl kwd">paste0</span><span class="hl std">(</span><span class="hl str">&quot;https://www.paginegialle.it/ricerca/&quot;</span><span class="hl std">,</span><span class="hl kwd">gsub</span><span class="hl std">(</span><span class="hl str">&quot; &quot;</span><span class="hl std">,</span><span class="hl str">&quot;%20&quot;</span><span class="hl std">,lavori),</span><span class="hl str">&quot;/&quot;</span><span class="hl std">,</span><span class="hl kwd">gsub</span><span class="hl std">(</span><span class="hl str">&quot; &quot;</span><span class="hl std">,</span><span class="hl str">&quot;%20&quot;</span><span class="hl std">,zone),</span><span class="hl str">&quot;/p-&quot;</span><span class="hl std">,i)))</span>
+
+      <span class="hl kwa">if</span><span class="hl std">(</span><span class="hl kwd">length</span><span class="hl std">(page)</span><span class="hl opt">==</span><span class="hl num">1</span><span class="hl std">){</span>
+        <span class="hl kwd">try</span><span class="hl std">(page</span><span class="hl kwb">&lt;-</span><span class="hl kwd">read_html</span><span class="hl std">(</span><span class="hl kwd">paste0</span><span class="hl std">(</span><span class="hl str">&quot;https://www.paginegialle.it/ricerca/&quot;</span><span class="hl std">,</span><span class="hl kwd">gsub</span><span class="hl std">(</span><span class="hl str">&quot; &quot;</span><span class="hl std">,</span><span class="hl str">&quot;%20&quot;</span><span class="hl std">,lavori),</span><span class="hl str">&quot;/&quot;</span><span class="hl std">,</span><span class="hl kwd">gsub</span><span class="hl std">(</span><span class="hl str">&quot; &quot;</span><span class="hl std">,</span><span class="hl str">&quot;%20&quot;</span><span class="hl std">,zone),</span><span class="hl str">&quot;/p-&quot;</span><span class="hl std">,i)))</span>
+
+      <span class="hl kwa">if</span><span class="hl std">(</span><span class="hl kwd">length</span><span class="hl std">(page)</span><span class="hl opt">==</span><span class="hl num">1</span><span class="hl std">){</span>
+        <span class="hl kwd">try</span><span class="hl std">(page</span><span class="hl kwb">&lt;-</span><span class="hl kwd">read_html</span><span class="hl std">(</span><span class="hl kwd">paste0</span><span class="hl std">(</span><span class="hl str">&quot;https://www.paginegialle.it/ricerca/&quot;</span><span class="hl std">,</span><span class="hl kwd">gsub</span><span class="hl std">(</span><span class="hl str">&quot; &quot;</span><span class="hl std">,</span><span class="hl str">&quot;%20&quot;</span><span class="hl std">,lavori),</span><span class="hl str">&quot;/&quot;</span><span class="hl std">,</span><span class="hl kwd">gsub</span><span class="hl std">(</span><span class="hl str">&quot; &quot;</span><span class="hl std">,</span><span class="hl str">&quot;%20&quot;</span><span class="hl std">,zone),</span><span class="hl str">&quot;/p-&quot;</span><span class="hl std">,i)))</span>
+
+      <span class="hl kwa">if</span><span class="hl std">(</span><span class="hl kwd">length</span><span class="hl std">(page)</span><span class="hl opt">==</span><span class="hl num">1</span><span class="hl std">){</span>
+        <span class="hl kwd">try</span><span class="hl std">(page</span><span class="hl kwb">&lt;-</span><span class="hl kwd">read_html</span><span class="hl std">(</span><span class="hl kwd">paste0</span><span class="hl std">(</span><span class="hl str">&quot;https://www.paginegialle.it/ricerca/&quot;</span><span class="hl std">,</span><span class="hl kwd">gsub</span><span class="hl std">(</span><span class="hl str">&quot; &quot;</span><span class="hl std">,</span><span class="hl str">&quot;%20&quot;</span><span class="hl std">,lavori),</span><span class="hl str">&quot;/&quot;</span><span class="hl std">,</span><span class="hl kwd">gsub</span><span class="hl std">(</span><span class="hl str">&quot; &quot;</span><span class="hl std">,</span><span class="hl str">&quot;%20&quot;</span><span class="hl std">,zone),</span><span class="hl str">&quot;/p-&quot;</span><span class="hl std">,i)))</span>
+
+      <span class="hl kwa">if</span><span class="hl std">(</span><span class="hl kwd">length</span><span class="hl std">(page)</span><span class="hl opt">==</span><span class="hl num">1</span><span class="hl std">){</span>
+        <span class="hl kwd">try</span><span class="hl std">(page</span><span class="hl kwb">&lt;-</span><span class="hl kwd">read_html</span><span class="hl std">(</span><span class="hl kwd">paste0</span><span class="hl std">(</span><span class="hl str">&quot;https://www.paginegialle.it/ricerca/&quot;</span><span class="hl std">,</span><span class="hl kwd">gsub</span><span class="hl std">(</span><span class="hl str">&quot; &quot;</span><span class="hl std">,</span><span class="hl str">&quot;%20&quot;</span><span class="hl std">,lavori),</span><span class="hl str">&quot;/&quot;</span><span class="hl std">,</span><span class="hl kwd">gsub</span><span class="hl std">(</span><span class="hl str">&quot; &quot;</span><span class="hl std">,</span><span class="hl str">&quot;%20&quot;</span><span class="hl std">,zone),</span><span class="hl str">&quot;/p-&quot;</span><span class="hl std">,i)))</span>
+
+      <span class="hl kwa">if</span><span class="hl std">(</span><span class="hl kwd">length</span><span class="hl std">(page)</span><span class="hl opt">==</span><span class="hl num">1</span><span class="hl std">){</span>
+        <span class="hl kwd">try</span><span class="hl std">(page</span><span class="hl kwb">&lt;-</span><span class="hl kwd">read_html</span><span class="hl std">(</span><span class="hl kwd">paste0</span><span class="hl std">(</span><span class="hl str">&quot;https://www.paginegialle.it/ricerca/&quot;</span><span class="hl std">,</span><span class="hl kwd">gsub</span><span class="hl std">(</span><span class="hl str">&quot; &quot;</span><span class="hl std">,</span><span class="hl str">&quot;%20&quot;</span><span class="hl std">,lavori),</span><span class="hl str">&quot;/&quot;</span><span class="hl std">,</span><span class="hl kwd">gsub</span><span class="hl std">(</span><span class="hl str">&quot; &quot;</span><span class="hl std">,</span><span class="hl str">&quot;%20&quot;</span><span class="hl std">,zone),</span><span class="hl str">&quot;/p-&quot;</span><span class="hl std">,i)))</span>
+
+      <span class="hl kwa">if</span><span class="hl std">(</span><span class="hl kwd">length</span><span class="hl std">(page)</span><span class="hl opt">==</span><span class="hl num">1</span><span class="hl std">){</span>
+        <span class="hl kwd">try</span><span class="hl std">(page</span><span class="hl kwb">&lt;-</span><span class="hl kwd">read_html</span><span class="hl std">(</span><span class="hl kwd">paste0</span><span class="hl std">(</span><span class="hl str">&quot;https://www.paginegialle.it/ricerca/&quot;</span><span class="hl std">,</span><span class="hl kwd">gsub</span><span class="hl std">(</span><span class="hl str">&quot; &quot;</span><span class="hl std">,</span><span class="hl str">&quot;%20&quot;</span><span class="hl std">,lavori),</span><span class="hl str">&quot;/&quot;</span><span class="hl std">,</span><span class="hl kwd">gsub</span><span class="hl std">(</span><span class="hl str">&quot; &quot;</span><span class="hl std">,</span><span class="hl str">&quot;%20&quot;</span><span class="hl std">,zone),</span><span class="hl str">&quot;/p-&quot;</span><span class="hl std">,i)))</span>
+    <span class="hl std">}}}}}}}}}</span>
+    <span class="hl kwa">if</span><span class="hl std">(</span><span class="hl kwd">length</span><span class="hl std">(page)</span><span class="hl opt">!=</span><span class="hl num">1</span><span class="hl std">){</span>
+      <span class="hl kwd">try</span><span class="hl std">(txt</span><span class="hl kwb">&lt;-</span><span class="hl kwd">as.character</span><span class="hl std">(</span><span class="hl kwd">html_nodes</span><span class="hl std">(page,</span><span class="hl kwc">xpath</span> <span class="hl std">=</span> <span class="hl str">'//a'</span><span class="hl std">)))</span>
+      <span class="hl std">d</span><span class="hl kwb">&lt;-</span><span class="hl kwd">str_locate</span><span class="hl std">(txt,</span> <span class="hl str">&quot;btn-black&quot;</span><span class="hl std">)</span>
+      <span class="hl std">h</span><span class="hl kwb">&lt;-</span><span class="hl kwd">c</span><span class="hl std">(</span><span class="hl num">1</span><span class="hl opt">:</span><span class="hl kwd">length</span><span class="hl std">(d[,</span><span class="hl num">1</span><span class="hl std">]))[</span><span class="hl opt">-</span><span class="hl kwd">which</span><span class="hl std">(</span><span class="hl kwd">is.na</span><span class="hl std">(d[,</span><span class="hl num">1</span><span class="hl std">]))]</span>
+      <span class="hl std">sitiwebdent</span><span class="hl kwb">&lt;-</span><span class="hl std">txt[h]</span>
+      <span class="hl std">sitodent</span><span class="hl kwb">&lt;-</span><span class="hl kwd">numeric</span><span class="hl std">()</span>
+      <span class="hl kwa">for</span> <span class="hl std">(t</span> <span class="hl kwa">in</span> <span class="hl num">1</span><span class="hl opt">:</span><span class="hl kwd">length</span><span class="hl std">(sitiwebdent)) {</span>
+        <span class="hl std">d</span><span class="hl kwb">&lt;-</span><span class="hl kwd">str_locate</span><span class="hl std">(sitiwebdent[t],</span><span class="hl str">&quot;www.paginegialle.it&quot;</span><span class="hl std">)</span>
+        <span class="hl kwa">if</span><span class="hl std">(</span><span class="hl kwd">is.na</span><span class="hl std">(</span><span class="hl kwd">as.integer</span><span class="hl std">(d[</span><span class="hl num">1</span><span class="hl std">,</span><span class="hl num">1</span><span class="hl std">]))){</span>
+          <span class="hl std">inizio</span><span class="hl kwb">&lt;-</span><span class="hl kwd">as.integer</span><span class="hl std">(</span><span class="hl kwd">str_locate</span><span class="hl std">(sitiwebdent[t],</span><span class="hl str">&quot;href=\&quot;&quot;</span><span class="hl std">)[</span><span class="hl num">1</span><span class="hl std">,</span><span class="hl num">2</span><span class="hl std">])</span>
+          <span class="hl std">fine</span><span class="hl kwb">&lt;-</span><span class="hl kwd">as.integer</span><span class="hl std">(</span><span class="hl kwd">str_locate</span><span class="hl std">(sitiwebdent[t],</span><span class="hl str">&quot;\&quot; target=\&quot;_blank\&quot;&quot;</span><span class="hl std">)[</span><span class="hl num">1</span><span class="hl std">,</span><span class="hl num">1</span><span class="hl std">])</span>
+          <span class="hl std">sitodent</span><span class="hl kwb">&lt;-</span><span class="hl kwd">c</span><span class="hl std">(sitodent,</span><span class="hl kwd">substr</span><span class="hl std">(sitiwebdent[t],inizio</span><span class="hl opt">+</span><span class="hl num">1</span><span class="hl std">,fine</span><span class="hl opt">-</span><span class="hl num">1</span><span class="hl std">))</span>
+        <span class="hl std">}</span>
+      <span class="hl std">}</span>
+      <span class="hl kwa">if</span><span class="hl std">(</span><span class="hl kwd">length</span><span class="hl std">(sitodent)</span><span class="hl opt">&gt;</span><span class="hl num">0</span><span class="hl std">){</span>
+        <span class="hl kwa">for</span><span class="hl std">(t</span> <span class="hl kwa">in</span> <span class="hl num">1</span><span class="hl opt">:</span><span class="hl kwd">length</span><span class="hl std">(sitodent)){</span>
+          <span class="hl kwd">try</span><span class="hl std">(page</span><span class="hl kwb">&lt;-</span><span class="hl kwd">read_html</span><span class="hl std">(sitodent[t]))</span>
+          <span class="hl kwd">try</span><span class="hl std">(txt</span><span class="hl kwb">&lt;-</span><span class="hl kwd">as.character</span><span class="hl std">(</span><span class="hl kwd">html_nodes</span><span class="hl std">(page,</span><span class="hl kwc">xpath</span> <span class="hl std">=</span> <span class="hl str">'//a'</span><span class="hl std">)))</span>
+          <span class="hl kwa">for</span><span class="hl std">(h</span> <span class="hl kwa">in</span> <span class="hl num">1</span><span class="hl opt">:</span><span class="hl kwd">length</span><span class="hl std">(txt)){</span>
+            <span class="hl std">d</span><span class="hl kwb">&lt;-</span><span class="hl kwd">str_locate</span><span class="hl std">(txt[h],</span><span class="hl str">&quot;mailto:&quot;</span><span class="hl std">)</span>
+            <span class="hl kwa">if</span><span class="hl std">(</span><span class="hl kwd">is.na</span><span class="hl std">(</span><span class="hl kwd">as.integer</span><span class="hl std">(d[</span><span class="hl num">1</span><span class="hl std">,</span><span class="hl num">1</span><span class="hl std">]))</span><span class="hl opt">==</span><span class="hl std">F){</span>
+              <span class="hl std">inizio</span><span class="hl kwb">&lt;-</span><span class="hl kwd">as.integer</span><span class="hl std">(</span><span class="hl kwd">str_locate</span><span class="hl std">(txt[h],</span><span class="hl str">&quot;mailto:&quot;</span><span class="hl std">)[</span><span class="hl num">1</span><span class="hl std">,</span><span class="hl num">2</span><span class="hl std">])</span>
+              <span class="hl std">mail[t]</span><span class="hl kwb">&lt;-</span><span class="hl kwd">substr</span><span class="hl std">(txt[h],inizio</span><span class="hl opt">+</span><span class="hl num">1</span><span class="hl std">,</span><span class="hl kwd">nchar</span><span class="hl std">(txt[h]))</span>
+              <span class="hl std">fine</span><span class="hl kwb">&lt;-</span><span class="hl kwd">as.integer</span><span class="hl std">(</span><span class="hl kwd">str_locate</span><span class="hl std">((mail[t]),</span><span class="hl str">&quot;\&quot;&quot;</span><span class="hl std">)[</span><span class="hl num">1</span><span class="hl std">,</span><span class="hl num">1</span><span class="hl std">])</span>
+              <span class="hl std">mail[t]</span><span class="hl kwb">&lt;-</span><span class="hl kwd">substr</span><span class="hl std">(mail[t],</span><span class="hl num">0</span><span class="hl std">,fine</span><span class="hl opt">-</span><span class="hl num">1</span><span class="hl std">)</span>
+            <span class="hl std">}</span>
+          <span class="hl std">}</span>
+        <span class="hl std">}</span>
+        <span class="hl std">database_scar</span><span class="hl kwb">&lt;-</span><span class="hl kwd">rbind</span><span class="hl std">(database_scar,</span><span class="hl kwd">cbind</span><span class="hl std">(sitodent,mail,lavori,zone,regione))</span>
+      <span class="hl std">}</span>
+    <span class="hl std">}</span><span class="hl kwa">else</span><span class="hl std">{</span>
+      <span class="hl std">errore</span><span class="hl kwb">=</span><span class="hl std">errore</span><span class="hl opt">+</span><span class="hl num">1</span>
+    <span class="hl std">}</span>
+    <span class="hl kwd">print</span><span class="hl std">(errore)</span>
+    <span class="hl kwa">if</span><span class="hl std">(errore</span><span class="hl opt">&gt;</span><span class="hl num">10</span><span class="hl std">){</span><span class="hl kwa">break</span><span class="hl std">}</span>
+  <span class="hl std">})}</span>
+<span class="hl std">}</span>
+</pre></div>
+</div></div>
+
+
+<p>Dopo opportune operazioni di eliminazione di eventuali errori previsti o comuni salviamo il file in formato csv</p>
+
+<div class="chunk" id="unnamed-chunk-5"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl com"># 'riordino'</span>
+<span class="hl kwd">dim</span><span class="hl std">(database_scar)</span>
+<span class="hl std">db</span><span class="hl kwb">&lt;-</span><span class="hl kwd">data.frame</span><span class="hl std">(database_scar)</span>
+<span class="hl std">d</span><span class="hl kwb">&lt;-</span><span class="hl kwd">which</span><span class="hl std">(</span><span class="hl kwd">is.na</span><span class="hl std">(db</span><span class="hl opt">$</span><span class="hl std">Email))</span>
+<span class="hl kwa">if</span><span class="hl std">(</span><span class="hl kwd">length</span><span class="hl std">(d)</span><span class="hl opt">&gt;</span><span class="hl num">0</span><span class="hl std">){db</span><span class="hl kwb">&lt;-</span><span class="hl std">db[</span><span class="hl opt">-</span><span class="hl std">d,]}</span>
+<span class="hl std">d</span><span class="hl kwb">&lt;-</span><span class="hl kwd">which</span><span class="hl std">(</span><span class="hl kwd">is.na</span><span class="hl std">(db</span><span class="hl opt">$</span><span class="hl std">Sito.web))</span>
+<span class="hl kwa">if</span><span class="hl std">(</span><span class="hl kwd">length</span><span class="hl std">(d)</span><span class="hl opt">&gt;</span><span class="hl num">0</span><span class="hl std">){db</span><span class="hl kwb">&lt;-</span><span class="hl std">db[</span><span class="hl opt">-</span><span class="hl std">d,]}</span>
+<span class="hl std">d</span><span class="hl kwb">&lt;-</span><span class="hl kwd">which</span><span class="hl std">(db</span><span class="hl opt">$</span><span class="hl std">Email</span><span class="hl opt">==</span><span class="hl str">&quot;le mail&quot;</span><span class="hl std">)</span>
+<span class="hl kwa">if</span><span class="hl std">(</span><span class="hl kwd">length</span><span class="hl std">(d)</span><span class="hl opt">&gt;</span><span class="hl num">0</span><span class="hl std">){db</span><span class="hl kwb">&lt;-</span><span class="hl std">db[</span><span class="hl opt">-</span><span class="hl std">d,]}</span>
+<span class="hl std">d</span><span class="hl kwb">&lt;-</span><span class="hl kwd">which</span><span class="hl std">(db</span><span class="hl opt">$</span><span class="hl std">Sito.web</span><span class="hl opt">==</span><span class="hl str">&quot;&quot;</span><span class="hl std">)</span>
+<span class="hl kwa">if</span><span class="hl std">(</span><span class="hl kwd">length</span><span class="hl std">(d)</span><span class="hl opt">&gt;</span><span class="hl num">0</span><span class="hl std">){db</span><span class="hl kwb">&lt;-</span><span class="hl std">db[</span><span class="hl opt">-</span><span class="hl std">d,]}</span>
+<span class="hl std">d</span><span class="hl kwb">&lt;-</span><span class="hl kwd">which</span><span class="hl std">(db</span><span class="hl opt">$</span><span class="hl std">Email</span><span class="hl opt">==</span><span class="hl str">&quot;&quot;</span><span class="hl std">)</span>
+<span class="hl kwa">if</span><span class="hl std">(</span><span class="hl kwd">length</span><span class="hl std">(d)</span><span class="hl opt">&gt;</span><span class="hl num">0</span><span class="hl std">){db</span><span class="hl kwb">&lt;-</span><span class="hl std">db[</span><span class="hl opt">-</span><span class="hl std">d,]}</span>
+<span class="hl std">err</span><span class="hl kwb">&lt;-</span><span class="hl kwd">numeric</span><span class="hl std">()</span>
+<span class="hl kwa">for</span><span class="hl std">(i</span> <span class="hl kwa">in</span> <span class="hl num">1</span><span class="hl opt">:</span><span class="hl kwd">length</span><span class="hl std">(db</span><span class="hl opt">$</span><span class="hl std">Email)){</span>
+  <span class="hl std">db</span><span class="hl opt">$</span><span class="hl std">Email[i]</span><span class="hl kwb">&lt;-</span><span class="hl kwd">gsub</span><span class="hl std">(</span><span class="hl str">&quot;%20&quot;</span><span class="hl std">,</span><span class="hl str">&quot;&quot;</span><span class="hl std">,db</span><span class="hl opt">$</span><span class="hl std">Email[i])</span>
+  <span class="hl std">db</span><span class="hl opt">$</span><span class="hl std">Email[i]</span><span class="hl kwb">&lt;-</span><span class="hl kwd">gsub</span><span class="hl std">(</span><span class="hl str">&quot;/&quot;</span><span class="hl std">,</span><span class="hl str">&quot;&quot;</span><span class="hl std">,db</span><span class="hl opt">$</span><span class="hl std">Email[i])</span>
+  <span class="hl std">db</span><span class="hl opt">$</span><span class="hl std">Email[i]</span><span class="hl kwb">&lt;-</span><span class="hl kwd">gsub</span><span class="hl std">(</span><span class="hl str">&quot;,&quot;</span><span class="hl std">,</span><span class="hl str">&quot;&quot;</span><span class="hl std">,db</span><span class="hl opt">$</span><span class="hl std">Email[i])</span>
+  <span class="hl std">db</span><span class="hl opt">$</span><span class="hl std">Sito.web[i]</span><span class="hl kwb">&lt;-</span><span class="hl kwd">gsub</span><span class="hl std">(</span><span class="hl str">&quot;,&quot;</span><span class="hl std">,</span><span class="hl str">&quot;&quot;</span><span class="hl std">,db</span><span class="hl opt">$</span><span class="hl std">Sito.web[i])</span>
+  <span class="hl kwa">if</span><span class="hl std">(</span><span class="hl kwd">is.na</span><span class="hl std">(</span><span class="hl kwd">str_locate</span><span class="hl std">(db</span><span class="hl opt">$</span><span class="hl std">Email[i],</span><span class="hl str">&quot;%&quot;</span><span class="hl std">)[</span><span class="hl num">1</span><span class="hl std">,</span><span class="hl num">1</span><span class="hl std">])</span><span class="hl opt">==</span><span class="hl std">F){</span>
+    <span class="hl std">err</span><span class="hl kwb">&lt;-</span><span class="hl kwd">c</span><span class="hl std">(err,i)</span>
+  <span class="hl std">}</span>
+  <span class="hl kwa">if</span><span class="hl std">(</span><span class="hl kwd">is.na</span><span class="hl std">(</span><span class="hl kwd">str_locate</span><span class="hl std">(db</span><span class="hl opt">$</span><span class="hl std">Email[i],</span><span class="hl str">&quot;@&quot;</span><span class="hl std">)[</span><span class="hl num">1</span><span class="hl std">,</span><span class="hl num">1</span><span class="hl std">])){</span>
+    <span class="hl std">err</span><span class="hl kwb">&lt;-</span><span class="hl kwd">c</span><span class="hl std">(err,i)</span>
+  <span class="hl std">}</span>
+<span class="hl std">}</span>
+<span class="hl kwa">if</span><span class="hl std">(</span><span class="hl kwd">length</span><span class="hl std">(err)</span><span class="hl opt">&gt;</span><span class="hl num">0</span><span class="hl std">){db</span><span class="hl kwb">&lt;-</span><span class="hl std">db[</span><span class="hl opt">-</span><span class="hl std">err,]}</span>
+<span class="hl std">liv</span><span class="hl kwb">&lt;-</span><span class="hl kwd">levels</span><span class="hl std">(</span><span class="hl kwd">as.factor</span><span class="hl std">(db</span><span class="hl opt">$</span><span class="hl std">Email))</span>
+<span class="hl std">a</span><span class="hl kwb">&lt;-</span><span class="hl kwd">numeric</span><span class="hl std">()</span>
+<span class="hl kwa">for</span><span class="hl std">(i</span> <span class="hl kwa">in</span> <span class="hl num">1</span><span class="hl opt">:</span><span class="hl kwd">length</span><span class="hl std">(liv)){</span>
+  <span class="hl std">a</span><span class="hl kwb">&lt;-</span><span class="hl kwd">c</span><span class="hl std">(a,</span><span class="hl kwd">which</span><span class="hl std">(db</span><span class="hl opt">$</span><span class="hl std">Email</span><span class="hl opt">==</span><span class="hl std">liv[i])[</span><span class="hl num">1</span><span class="hl std">])</span>
+<span class="hl std">}</span>
+<span class="hl std">d</span><span class="hl kwb">&lt;-</span><span class="hl kwd">which</span><span class="hl std">(</span><span class="hl kwd">is.na</span><span class="hl std">(a))</span>
+<span class="hl kwa">if</span><span class="hl std">(</span><span class="hl kwd">length</span><span class="hl std">(d)</span><span class="hl opt">&gt;</span><span class="hl num">0</span><span class="hl std">){a</span><span class="hl kwb">&lt;-</span><span class="hl std">a[</span><span class="hl opt">-</span><span class="hl std">d]}</span>
+<span class="hl std">finale</span><span class="hl kwb">&lt;-</span><span class="hl std">db[a,]</span>
+
+<span class="hl com"># 'salvo csv'</span>
+<span class="hl kwd">write.csv</span><span class="hl std">(finale,</span><span class="hl kwd">paste0</span><span class="hl std">(path,</span><span class="hl str">&quot;/mail_scaricate.csv&quot;</span><span class="hl std">))</span>
+</pre></div>
+</div></div>
+        </div>
+
+
+   <!-- Footer -->
+    <footer>
+       <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="https://twitter.com/SaccaggiGiacomo">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/giacomo-saccaggi-782439163/">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/GiacomoSaccaggi/">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; GiacomoSaccaggi</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </body>
+
+</html>
